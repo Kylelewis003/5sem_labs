@@ -56,7 +56,7 @@
                 <td><input type="checkbox" ng-model="task.COMPLETED"></td>
                 <td>
                     <span ng-show="!task.EDITING">{{task.TITLE}}</span>
-                    <input type="text" ng-show="task.EDITING" ng-blur="turnoffediting(task)">
+                    <input type="text" ng-model="task.TITLE" ng-show="task.EDITING" ng-blur="turnoffediting(task)">
                 </td>
                 <td><button ng-click="editTask(task)">Edit</button></td>
                 <td><button ng-click="deleteTask(task)">Delete</button></td>
